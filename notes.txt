@@ -1,0 +1,26 @@
+1- built two bares, Which are going to move up and down
+2 - create the ball, it is a tough part, it is a turtle that has to move itself following a line
+3- create the line in the middle of the screen and the sign where numbers will be located
+4 - set the limits.
+
+
+class Bar:
+1- First I have to inherit the class Turtle.
+ In the beginning, I tried to create a function "bar" but when I wanted to def UP , and DOWN,
+ I couldn't due to the fact that, I needed an instance to make it works.
+ So inheriting turtle, I already have the instance that is gonna be "self".
+
+2- To use the function "listen" from Turtle, I have to use a function.
+ Otherwise, this particular function doesn´t work.
+ So, I having already defined my instance, I can create two functions DOWN and UP.
+ Here I must consider three things:
+A- where does Y start? I use "ycor()"
+B- Add 20 or subtract 20
+C - set the new (x, y) . I use function goto(x,y)
+
+class ball:
+1- to know the angle to start moving the ball, I have calculated the hypotenuse with the aim of knowing the angle
+to move the ball. a = 300, b = 400 , c = 500. proportion of movement = a/c and b/c. I have to use Pitagoras
+only in the case that I want to get that the ball hit the corner.
+2 - remember to use = when I want to carry out a multiplication. In this case for instance, I had to do
+number *= -1.
